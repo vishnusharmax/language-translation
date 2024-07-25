@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Translation Service</h1>
+        <form id="translate-form">
+            <label for="source">Source Language:</label>
+            <select id="source" name="source" required>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Korean">Korean</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Bengali">Bengali</option>
+                <!-- Add more languages as needed -->
+            </select>
+
+            <label for="target">Target Language:</label>
+            <select id="target" name="target" required>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Korean">Korean</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Bengali">Bengali</option>
+                <!-- Add more languages as needed -->
+            </select>
+
+            <label for="text">Text to Translate:</label>
+            <textarea id="text" name="text" required></textarea>
+
+            <button type="submit" id="submit-button">
+                <span id="button-text">Translate</span>
+                <span id="loader" class="hidden"></span>
+            </button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
